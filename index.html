@@ -8,12 +8,18 @@
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
 	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<style>
+		#List {
+			display: flex
+		}
+	</style>
 </head>
 
 <body>
 	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button onclick="Addlist()">+</button>
+	<input type='text' onkeypress="pressEnter(event)">
+	<button id ='myBtn' onclick="Addlist()">+</button>
+	<div id='List'></div>
 </body>
 
 </html>
