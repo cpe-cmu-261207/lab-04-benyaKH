@@ -8,9 +8,14 @@ const ul = document.createElement('ul')
 //add task button
 const Addlist = () => {
     const v = document.querySelector('input').value
-    const li = document.createElement('li')
+    if(v === ''){
+        alert("You don't have things to do  huh!?")
+    }
+    else{
+        const li = document.createElement('li')
 	li.innerHTML = v
 	ul.append(li)
+    }
 }
 //show everything
 document.body.append(ul)
