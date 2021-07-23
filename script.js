@@ -1,4 +1,3 @@
-//localStorage
 let currentInput = ''
 
 //input task
@@ -6,6 +5,7 @@ let currentInput = ''
 //list (ul, li)
 const ul = document.getElementById("List")
 const fn = document.getElementById("finish")
+const All = document.getElementById("All")
 //click
 const Addlist = () => {
     const v = document.querySelector('input').value
@@ -57,7 +57,8 @@ const pressEnter = (event) => {
     if (event.code === 'Enter')
         document.getElementById("myBtn").click()
 }
-//click done
+//localStorage
 //show everything
 document.body.append(ul)
 document.body.append(fn)
+
