@@ -1,3 +1,4 @@
+//localStorage
 let currentInput = ''
 
 //input task
@@ -15,8 +16,9 @@ const Addlist = () => {
         const li = document.createElement('div')
         li.id = "task"
         li.innerHTML = v
-        //create done and delete
+        //done button
         const done = document.createElement('button')
+        done.style.visibility = 'hidden'
         done.innerHTML = 'done'
         done.id = "done"
         done.addEventListener('click', () => {
@@ -27,7 +29,9 @@ const Addlist = () => {
             ul.removeChild(li)
 
         })
+        //delete button
         const dlt = document.createElement('button')
+        dlt.style.visibility = 'hidden'
         dlt.innerHTML = 'delete'
         dlt.id = "dlt"
         dlt.addEventListener('click', () => {
@@ -35,6 +39,15 @@ const Addlist = () => {
         })
         li.append(done)
         li.append(dlt)
+        //animation button
+        li.addEventListener('mouseleave', () => {
+            done.style.visibility = 'hidden'
+            dlt.style.visibility = 'hidden'
+        })
+        li.addEventListener('mouseover', () => {
+            done.style.visibility = 'visible'
+            dlt.style.visibility = 'visible'
+        })
         //add li to ul
         ul.insertBefore(li, ul.childNodes[0])
     }
