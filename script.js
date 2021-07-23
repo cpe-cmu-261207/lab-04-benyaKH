@@ -4,6 +4,7 @@ let currentInput = ''
 
 //list (ul, li)
 const ul = document.getElementById("List")
+const fn = document.getElementById("finish")
 //click
 const Addlist = () => {
     const v = document.querySelector('input').value
@@ -19,7 +20,12 @@ const Addlist = () => {
         done.innerHTML = 'done'
         done.id = "done"
         done.addEventListener('click', () => {
-            li.style.textDecoration = "line-through"
+            const dn = document.createElement('div')
+            dn.innerText = v
+            dn.style.textDecoration = "line-through"
+            fn.insertBefore(dn, fn.childNodes[0])
+            ul.removeChild(li)
+
         })
         const dlt = document.createElement('button')
         dlt.innerHTML = 'delete'
@@ -41,3 +47,4 @@ const pressEnter = (event) => {
 //click done
 //show everything
 document.body.append(ul)
+document.body.append(fn)
