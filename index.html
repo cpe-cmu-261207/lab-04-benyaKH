@@ -8,28 +8,14 @@
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<style>
-		#List {
-			background-color: green;
-			max-width: 768px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		#finish {
-			background-color: lightblue;
-			max-width: 768px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	</style>
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <body class="bg-red-200">
-	<div class="max-w-screen-md mx-auto bg-white">
-		<h1>Minimal Todo List</h1>
-		<input type='text' onkeypress="pressEnter(event)">
-		<button id='myBtn' onclick="Addlist()">+</button>
+	<div class="max-w-screen-md mx-auto bg-red-500">
+		<h3>Minimal Todo List</h3>
+		<input type='text' onkeypress="pressEnter(event)" class="m-2.5">
+		<button id='myBtn'>+</button>
 		<div id='List'></div>
 		<div id='finish'></div>
 	</div>

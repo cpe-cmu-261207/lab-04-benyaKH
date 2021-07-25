@@ -1,0 +1,57 @@
+#List {
+    background-color:white;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#finish {
+    background-color: rgb(60, 255, 0);
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+}
+#myBtn{
+    background-color: darkorange;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: 2px;
+}
+
+.W-task {
+    margin: 0.625rem;
+}
+
+.done-task {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    margin: 0.625rem;
+    
+}
+
+.All-btn {
+    margin: 0.625rem;
+}
+
+.done-btn {
+    background-color: greenyellow;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 0.25rem;
+    width: 3.5rem;
+    height: 2rem;
+}
+
+.dlt-btn {
+    background-color: aquamarine;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 0.25rem;
+    width: 3.5rem;
+    height: 2rem;
+}
